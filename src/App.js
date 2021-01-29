@@ -41,7 +41,7 @@ const App = () => {
     .catch(err => {
       setFormErrors({
         ...formErrors,
-        [name]: err.formErrors[0],
+        [name]: err.formErrors[0]
       })
     })
     setFormValues({
@@ -78,13 +78,7 @@ const App = () => {
         <Link to="/pizza">Order now</Link>
       </div>  
 
-      {/* <Form 
-        values={formValues}
-        change={change}
-        submit={formSubmit}
-        disabled={disabled}
-        errors={formErrors}
-      /> */}
+     
       <div>
         <Switch>
         <Route >
@@ -94,7 +88,9 @@ const App = () => {
            submit={formSubmit}
            disabled={disabled}
            errors={formErrors}
+           pizzas={pizza}
            />
+        
         </Route>
            </Switch>
       </div>

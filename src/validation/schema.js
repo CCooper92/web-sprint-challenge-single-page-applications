@@ -7,7 +7,7 @@ export default yup.object().shape({
         .min(2, 'name must be 2 chars long'),
     size: yup
         .string()
-        .oneOf(['small', 'medium', 'large'], "size is required"),
+        .oneOf(['small', 'medium', 'large'],"size is required"),
     pepperoni: yup.boolean(),
     peppers:yup.boolean(),
     onion:yup.boolean(),

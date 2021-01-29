@@ -1,3 +1,4 @@
+
 import React from "react";
 
 export default function Form(props) {
@@ -105,6 +106,17 @@ export default function Form(props) {
             type="text"
           />
         </label>
+            {/* {pizza.map((food) => {
+                return(
+                    <div>
+                        <h3>Order Confirmation</h3>
+
+                        })}
+
+                    </div>
+                )
+            })} */}
+       
         <button disabled={disabled}>submit</button>
       </div>
     </form>
